@@ -23,6 +23,18 @@
             margin-top: 16px
         &__description
             margin-top: 16px
+    .consultation
+        min-height: 0
+        padding: 21px 16px
+        &__text
+            text-align: center
+    .title_consultation
+        font-size: 30px
+        text-align: center
+        line-height: 45px
+    .feed-form
+        margin: 0 auto
+        margin-top: 36px
 
 @media (max-width: 767px)
     .header
@@ -62,13 +74,19 @@
             flex-direction: column
             column-gap: 0
             row-gap: 32px
-        &__heading
-            font-size: 32px
-            line-height: 32px
         &__topic
             font-size: 20px
         &__description
             font-size: 16px
+    .consultation
+        &__text
+            font-size: 16px
+    .title
+        font-size: 32px
+        line-height: 32px
+        &_consultation
+            br
+                display: none
 
 @media (max-width: 575px)
     .header
@@ -103,8 +121,6 @@
         height: 32px
         font-size: 11px
     .advantages
-        &__heading
-            font-size: 22px
         &__item
             img
                 width: 48px
@@ -114,3 +130,21 @@
         &__description
             font-size: 12px
             max-width: 80%
+    .consultation
+        &__text
+            font-size: 12px
+            line-height: 21px
+    .button_form
+        height: 42px
+        font-size: 12px
+    .feed-form
+        margin-top: 18px
+        input
+            height: 42px
+            font-size: 12px
+    .title
+        font-size: 22px
+        &_consultation
+            font-size: 16px
+            font-weight: 600
+            line-height: 28px
