@@ -1,0 +1,151 @@
+.catalog
+    padding: 0 0 80px 0
+    &__tabs
+        list-style-type: none
+        display: flex
+        column-gap: 10px
+        justify-content: center
+        padding: 0
+        margin: 0
+        margin-top: 46px
+    &__tab
+        cursor: pointer
+        background: none
+        border: 2px solid #D0D0D0
+        font-weight: 400
+        font-size: 18px
+        line-height: 50px
+        text-align: center
+        width: 222px
+        height: 52px
+        transform: skewX(-25deg)
+        color: #6B6B6B
+        text-transform: uppercase
+        transition: 0.3s all
+        div
+            transform: skewX(25deg)
+        &_active
+            line-height: 52px
+            background: $main-color
+            border: none
+            color: #FFFFFF
+        &:hover
+            border: none
+            box-shadow: 3px 3px 8px $main-color
+    &__list
+        list-style-type: none
+        padding: 0
+        margin-top: 57px
+        display: none
+        &_active
+            display: flex
+            flex-wrap: wrap
+            row-gap: 18px
+            column-gap: 18px
+    &__product
+        display: inline-block
+        border: 2px solid #E8E8E8
+        width: 300px        
+        min-height: 442px
+        padding: 20px
+        overflow: hidden
+    &__img
+        max-width: 100%
+        height: 200px
+        display: block
+        margin: 0 auto
+    &__name
+        font-weight: 700
+        font-size: 16px
+        color: #0D0D0D
+        text-align: center
+        margin-top: 15px
+    &__descr
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: #0D0D0D
+        margin-top: 15px
+        margin-bottom: 28px
+    &__link
+        position: absolute
+        bottom: 0
+        left: 50%
+        translate: -50%
+        font-weight: 500
+        font-size: 14px
+        color: $main-color
+        display: block
+        text-align: center
+        &:hover
+            color: $main-color
+    &__link-back
+        position: absolute
+        bottom: 0
+        left: 50%
+        translate: -50%
+        font-weight: 500
+        font-size: 14px
+        color: $main-color
+        display: block
+        text-align: center
+        &:hover
+            color: $main-color
+    &__divider
+        margin: 17px 0 17px 0
+    &__footer
+        display: flex
+        justify-content: space-between
+    &__price-old
+        margin-top: 4px
+        font-weight: 300
+        font-size: 14px
+        line-height: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__price-new
+        font-weight: 700
+        font-size: 20px
+        line-height: 20px
+        color: #050505
+        margin-top: 2px
+    &__sides
+        display: flex
+        width: 200%
+    &__front
+        position: relative
+        transition: 0.5s all
+        width: 50%
+        translate: -100%
+        padding-right: 20px
+        &_active
+            padding-right: 0
+            translate: 0
+    &__back
+        position: relative
+        transition: 0.5s all
+        padding-left: 20px
+        width: 50%
+        ul
+            list-style-type: none
+            padding-left: 0px
+        li
+            position: relative
+            padding-left: 12px
+            font-weight: 300
+            font-size: 14px
+            line-height: 21px
+            color: #555555
+            margin-top: 4px
+            &::before
+                content: ''
+                position: absolute
+                width: 5px
+                height: 5px
+                background-color: $main-color
+                left: 0
+                top: 7px
+        &_active
+            padding-left: 0
+            translate: -100%
